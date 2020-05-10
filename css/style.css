@@ -5,3 +5,7 @@
     background-color: #08AEEA;
     background-image: linear-gradient(225deg, #08AEEA 0%, #2AF598 100%);
 }
+.bg-gradient2{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);              
+}
