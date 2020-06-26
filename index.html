@@ -48,7 +48,8 @@
     </section>
     <article class="container-fluid bg-light pt-5 pb-4 text-center my-4">
         <p class="container lead">I consider myself as a creative person, always chasing better ideas, better
-            solutions. I started designing when I was young creating and editing photos in Photoshop, today I'm industrial design student and recently I've
+            solutions. I started designing when I was young creating and editing photos in Photoshop, today I'm
+            industrial design student and recently I've
             started to code. I thinking about design and code as the fundamental part of the world we living it. I'm
             ready for bring solutions to the world :).</p>
     </article>
@@ -212,23 +213,21 @@
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
-                                        <a target="blank_"
-                                        href="https://www.behance.net/bylucas"
-                                        class="btn badge-color text-light btn-sm rounded-pill">View</a>&nbsp;
-                                    &nbsp;(2018 - 2020) | Ale Project
-                                </li>
+                                        <a target="blank_" href="https://www.behance.net/bylucas"
+                                            class="btn badge-color text-light btn-sm rounded-pill">View</a>&nbsp;
+                                        &nbsp;(2018 - 2020) | Ale Project
+                                    </li>
                                     <li class="list-group-item">
-                                        <a target="blank_"
-                                        href="https://www.behance.net/by-lucas"
-                                        class="btn badge-color text-light btn-sm rounded-pill">View</a>&nbsp;
-                                    &nbsp;(2019 - ) The Rave Brand - Access
-                                </li>
+                                        <a target="blank_" href="https://www.behance.net/by-lucas"
+                                            class="btn badge-color text-light btn-sm rounded-pill">View</a>&nbsp;
+                                        &nbsp;(2019 - ) The Rave Brand - Access
+                                    </li>
                                     <li class="list-group-item text-center">
-                                        <a href="https://behance.net/bylucas"
-                                        class="text-decoration-none link-color" target="blank_"><strong>My Behance
-                                            Porfolio</strong>
+                                        <a href="https://behance.net/bylucas" class="text-decoration-none link-color"
+                                            target="blank_"><strong>My Behance
+                                                Porfolio</strong>
                                         </a>
-                                </li>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -259,8 +258,9 @@
                                     <li class="list-group-item">React</li>
                                     <li class="list-group-item">GIT</li>
                                     <li class="list-group-item text-center"><a href="https://github.com/hechoporlucas"
-                                        class="text-decoration-none link-color" target="blank_"><strong>My GitHub</strong></a>
-                                </li>
+                                            class="text-decoration-none link-color" target="blank_"><strong>My
+                                                GitHub</strong></a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -269,6 +269,36 @@
             </div>
         </div>
         <hr>
+    </section>
+    <section class="container mt-4">
+        <h1 class="display-4 mb-4" id="contact">contact</h1>
+        <div class="card p-4 shadow mb-5 bg-white rounded">
+            <form onsubmit="validarFormulario(event)">
+                <div class="form-row pb-3">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="your name..." id="name"
+                            onblur="requerido(this)">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="e-mail..." id="email"
+                            onblur="revisarEmail(this)">
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback"></div>
+                    </div>
+                </div>
+                <textarea class="form-control" placeholder="your message..." id="textarea"></textarea>
+                <div class="form-row pt-3 pl-2">
+                    <div class="form-check align-self-center">
+                        <input class="form-check-input" type="checkbox" id="check">
+                        <label class="lead form-check-label" for="check">accept terms & conditions (privacy
+                            stuff)</label>
+                    </div>
+                    <button class="btn badge-color text-light rounded-pill ml-auto" type="submit">submit</button>
+                </div>
+            </form>
+        </div>
     </section>
     <footer class="container-fluid bg-light">
         <div class="container py-5 text-center">
@@ -282,7 +312,7 @@
         </div>
     </footer>
 
-
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
