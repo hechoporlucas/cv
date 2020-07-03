@@ -9,6 +9,12 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bc2c1d1785.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_gGFqN3UGcx7CncyUbdAsU");
+        })();
+    </script>
 </head>
 
 <body>
@@ -273,31 +279,40 @@
     <section class="container mt-4">
         <h1 class="display-4 mb-4" id="contact">contact</h1>
         <div class="card p-4 shadow mb-5 bg-white rounded">
-            <form onsubmit="validarFormulario(event)">
-                <div class="form-row pb-3">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="your name..." id="name"
-                            onblur="requerido(this)">
-                        <div class="valid-feedback"></div>
-                        <div class="invalid-feedback"></div>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="e-mail..." id="email"
-                            onblur="revisarEmail(this)">
-                        <div class="valid-feedback"></div>
-                        <div class="invalid-feedback"></div>
-                    </div>
+            <form onsubmit="validarGeneral(event)">
+                <div class="form-group">
+                    <label class="lead">name</label>
+                    <input class="form-control" type="text" placeholder="john doe" id="name"
+                        onblur="requerido(this)">
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
                 </div>
-                <textarea class="form-control" placeholder="your message..." id="textarea"></textarea>
-                <div class="form-row pt-3 pl-2">
-                    <div class="form-check align-self-center">
+                <div class="form-group">
+                    <label class="lead">e-mail</label>
+                    <input class="form-control" type="text" placeholder="thegreatopportunityofyourlife@gmail.com" id="email"
+                        onblur="revisarEmail(this)">
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label class="lead">message</label>
+                    <textarea class="form-control" id="consulta"
+                        placeholder="'hi lucas I love youu... (L)'"
+                        onblur="revisarConsulta(this)"></textarea>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="check">
-                        <label class="lead form-check-label" for="check">accept terms & conditions (privacy
-                            stuff)</label>
+                        <label>Acepto los terminos y condiciones del uso de datos.</label>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Para continuar debe aceptar los terminos y condiciones.</div>
                     </div>
-                    <button class="btn badge-color text-light rounded-pill ml-auto" type="submit">submit</button>
                 </div>
+                <button class="btn btn-success" id="btnEnviar" type="submit">Enviar</button>
             </form>
+            <div class="alert alert-success mt-3 d-none" role="alert" id="mensajeEnvio"></div>
         </div>
     </section>
     <footer class="container-fluid bg-light">
