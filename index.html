@@ -19,26 +19,26 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top" id="#navbar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-navbar fixed-top" id="navbar">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#cvNavbar"
+                    aria-controls="cvNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">main</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#career">career</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
-                    </ul>
+                <div class="ml-auto">
+                    <div class="collapse navbar-collapse" id="cvNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link lead" href="index.html">main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lead" href="#career">career</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lead" href="#contact">contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -183,7 +183,7 @@
                                         &nbsp;(2019) | Shelter Tuc.
                                     </li>
                                     <li class="list-group-item"><a target="blank_"
-                                            href="https://www.behance.net/bylucas"
+                                            href="https://www.behance.net/gallery/100623157/mrYam"
                                             class="btn badge-color text-light btn-sm rounded-pill">View</a>&nbsp;
                                         &nbsp;(2018) | Mr Yam.
                                     </li>
@@ -258,11 +258,46 @@
                             data-parent="#accordionExample1">
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">HTML</li>
-                                    <li class="list-group-item">CSS</li>
-                                    <li class="list-group-item">JavaScript</li>
-                                    <li class="list-group-item">React</li>
-                                    <li class="list-group-item">GIT</li>
+                                    <li class="list-group-item">
+                                        <p><b> HTML</b></p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                                style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><b> CSS</b></p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                                style="width: 90%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><b>JavaScript</b></p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><b>React</b></p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                                style="width: 30%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p><b>GIT</b></p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                                style="width: 70%" aria-valuenow="50" aria-valuemin="0"
+                                                aria-valuemax="100"></div>
+                                        </div>
+                                    </li>
                                     <li class="list-group-item text-center"><a href="https://github.com/hechoporlucas"
                                             class="text-decoration-none link-color" target="blank_"><strong>My
                                                 GitHub</strong></a>
@@ -282,22 +317,20 @@
             <form onsubmit="validarGeneral(event)">
                 <div class="form-group">
                     <label class="lead">name</label>
-                    <input class="form-control" type="text" placeholder="john doe" id="name"
-                        onblur="requerido(this)">
+                    <input class="form-control" type="text" placeholder="john doe" id="name" onblur="requerido(this)">
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="form-group">
                     <label class="lead">e-mail</label>
-                    <input class="form-control" type="text" placeholder="thegreatopportunityofyourlife@gmail.com" id="email"
-                        onblur="revisarEmail(this)">
+                    <input class="form-control" type="text" placeholder="thegreatopportunityofyourlife@gmail.com"
+                        id="email" onblur="revisarEmail(this)">
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="form-group">
                     <label class="lead">message</label>
-                    <textarea class="form-control" id="consulta"
-                        placeholder="'hi lucas I love youu... (L)'"
+                    <textarea class="form-control" id="consulta" placeholder="'hi lucas I love youu... (L)'"
                         onblur="revisarConsulta(this)"></textarea>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
@@ -309,7 +342,8 @@
                         <div class="valid-feedback"></div>
                         <div class="invalid-feedback">check the checkbox :).</div>
                     </div>
-                    <button class="btn badge-color text-light rounded-pill ml-auto" id="btnEnviar" type="submit">submit</button>
+                    <button class="btn badge-color text-light rounded-pill ml-auto" id="btnEnviar"
+                        type="submit">submit</button>
                 </div>
             </form>
             <div class="alert alert-success mt-3 d-none" role="alert" id="mensajeEnvio"></div>
